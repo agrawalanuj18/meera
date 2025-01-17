@@ -11,6 +11,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling */
         }
         .font-meerra {
             font-family: 'Sofia', sans-serif;
@@ -18,8 +19,17 @@
     </style>
 </head>
 <body class="">
+    <!-- Navigation Section (Optional for Smooth Scroll Testing) -->
+    <!-- <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <ul class="flex justify-center space-x-4 py-4">
+            <li><a href="#home" class="text-[#B03A2E] font-bold hover:underline">Home</a></li>
+            <li><a href="#story" class="text-[#B03A2E] font-bold hover:underline">Our Story</a></li>
+            <li><a href="#footer" class="text-[#B03A2E] font-bold hover:underline">Contact</a></li>
+        </ul>
+    </nav> -->
+
     <!-- Background Section -->
-    <div class="relative w-full h-screen overflow-hidden">
+    <div id="home" class="relative w-full h-screen overflow-hidden">
         <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGVjb21tZXJjZSUyMGNsb3RofGVufDB8fHx8MTY4NjAwMDk2MQ&ixlib=rb-1.2.1&q=80&w=1080" 
             alt="Background" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 flex items-center justify-center bg-white/50">
@@ -30,7 +40,7 @@
     </div>
 
     <!-- Our Story Section -->
-    <div class="bg-[#FDF3E5] flex flex-col items-center justify-center min-h-screen px-4">
+    <div id="story" class="bg-[#FDF3E5] flex flex-col items-center justify-center min-h-screen px-4">
         <div class="w-full text-center flex justify-center gap-8 md:justify-between md:px-56">
             <div class="text-7xl md:text-8xl lg:text-[260px] font-bold text-[#B03A2E] leading-tight">Our</div>
             <div class="text-7xl md:text-8xl lg:text-[260px] font-bold text-[#B03A2E] leading-tight">Story</div>
@@ -41,7 +51,7 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="py-8 px-4 md:px-16">
+    <footer id="footer" class="py-8 px-4 md:px-16">
         <div class="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left space-y-6 md:space-y-0">
             <!-- Logo Section -->
             <div class="flex flex-col items-center md:items-start">
@@ -59,7 +69,7 @@
 
             <!-- Instagram Section -->
             <div class="flex flex-col items-center">
-                <a href="https://www.instagram.com/ilovemymeerra/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
                         alt="Instagram Logo" class="w-10 hover:opacity-80 transition">
                 </a>
