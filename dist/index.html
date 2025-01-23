@@ -13,11 +13,14 @@
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth; /* Smooth scrolling */
         }
-        .font-meerra {
-            font-family: 'Sofia', sans-serif;
-        }
         :root {
             --dark-brown: #5C4033; /* Dark brown color */
+        }
+        .font-epica-like {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600; /* Adjust weight for bold appearance */
+            letter-spacing: 0.05em; /* Subtle letter spacing */
+         /* Ensure uppercase for main headings */
         }
     </style>
 </head>
@@ -27,8 +30,8 @@
         <img src="/assets/background-BCEb8p7J.jpeg" 
             alt="Background" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 flex items-center justify-center bg-white/50">
-            <h1 class="text-6xl md:text-7xl lg:text-[320px] font-bold text-[#c44c3f] uppercase tracking-wide">
-                MEERRA
+            <h1 class="text-6xl md:text-7xl lg:text-[320px] font-bold text-[#c44c3f] tracking-wide font-epica-like">
+                meerra
             </h1>
         </div>
     </div>
@@ -36,13 +39,14 @@
     <!-- Our Story Section -->
     <div id="story" class="bg-[#FDF3E5] flex flex-col items-center justify-center min-h-screen px-4">
         <div class="w-full text-center flex justify-center gap-3 lg:gap-6 px-4">
-            <div class="text-4xl md:text-6xl lg:text-[170px] font-bold text-[#b44336] leading-tight">MEERRA's</div>
-            <div class="text-4xl md:text-6xl lg:text-[170px] font-bold text-[#b44336] leading-tight">STORY</div>
+            <div class="text-4xl md:text-6xl lg:text-[170px] font-bold text-[#b44336] leading-tight font-epica-like">meerra's</div>
+            <div class="text-4xl md:text-6xl lg:text-[170px] font-bold text-[#b44336] leading-tight font-epica-like">story</div>
         </div>
         <p class="text-lg md:text-xl lg:text-2xl text-[var(--dark-brown)] max-w-5xl leading-relaxed text-center mt-8">
             Welcome to MEERRA, where children's clothing becomes a canvas for storytelling and cultural heritage.
             <br><br>
             We're inspired by the beauty of India's craftsmanship-think luxurious muslin, playful hand crochet, and vibrant fabrics dyed with Ayurvedic goodness like madder, turmeric, and indigo.
+            <br><br>
             We wanted to create modern clothing that tells a story-one of tradition, artistry, and a connection to the earth-so that you can feel the love and intention behind every stitch.
         </p>
     </div>
@@ -58,19 +62,18 @@
 
             <!-- Contact Information Section -->
             <div class="text-[var(--dark-brown)] text-sm md:text-base">
-                <p><strong>Address:</strong> Bhagwat, 2 NS Rd JVPD Scheme, Plot No. 50, Ground Floor </p>
+                <p>Bhagwat, 2 NS Rd JVPD Scheme, Plot No. 50, Ground Floor </p>
                 <p>Mumbai 400056. India</p>
-                <p class="mt-2"><strong>Email:</strong> ilovemymeerra@gmail.com</p>
-                <p><strong>Phone:</strong> +919930166444</p>
+                <p class="mt-2"> ilovemymeerra@gmail.com</p>
+                <p> +919930166444</p>
             </div>
 
             <!-- Instagram Section -->
             <div class="flex flex-col items-center">
                 <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-                        alt="Instagram Logo" class="w-10 hover:opacity-80 transition">
+                    <p class="text-[var(--dark-brown)] text-sm mt-2 md:my-auto md:text-xl">Follow us on Instagram</p>
                 </a>
-                <p class="text-[var(--dark-brown)] text-sm mt-2">Follow us on Instagram</p>
+                
             </div>
         </div>
     </footer>
